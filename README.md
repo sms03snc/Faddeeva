@@ -10,7 +10,7 @@ The specific approximation w_N(z) implemented is the approximation obtained when
 
 Precisely [1, Theorem 1.1] proves that |w(z)-w_N(z)| \leq 0.7 exp(-pi N) for all non-negative integers N and all complex z (in exact arithmetic), and a similar bound holds on the relative error in the upper complex half-plane where w(z) is non-zero.
 
-See [1] and its Supplementary Materials [2] for more details. In particular [1, Table 1] makes comparisons of accuracies and timings of this new method with previously published methods and their associated Matlab implementations. 
+See [1] and its Supplementary Materials [2] for more details. In particular [1, Table 1] makes comparisons of accuracies and timings of this new method with those of previously published methods and their associated Matlab implementations. 
 
 The Matlab codes in this project are:
 
