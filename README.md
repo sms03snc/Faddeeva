@@ -6,7 +6,7 @@ w(z) := exp(-z^2) erfc(-i z),
 
 where erfc is the standard complementary error function and i = sqrt(-1). The methods used are based on representations for w(z) as an integral on the real line [1, (3)], and the evaluation of these integrals by modified trapezoidal rules. 
 
-The specific approximation w_N(z) implemented is the approximation obtained when the modified trapezoidal rule is used with N+1 quadrature points. This new method is attractive becuase it is provably exponentially convergent at a rapid rate, the accuracy improving by a factor exp(pi) = 23.1... for each extra quadrature point. (The results in [1, Figure 2] demonstrate that this convergence is achieved in practice in double precision arithmetic.)
+The specific approximation w_N(z) implemented is the approximation obtained when the modified trapezoidal rule is used with N+1 quadrature points. This new method is attractive because it is provably exponentially convergent at a rapid rate, the accuracy improving by a factor exp(pi) = 23.1... for each extra quadrature point. (The results in [1, Figure 2] demonstrate that this convergence is achieved in practice in double precision arithmetic.)
 
 Precisely [1, Theorem 1.1] proves that |w(z)-w_N(z)| \leq 0.7 exp(-pi N) for all non-negative integers N and all complex z (in exact arithmetic), and a similar bound holds on the relative error in the upper complex half-plane where w(z) is non-zero.
 
