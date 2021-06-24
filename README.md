@@ -14,10 +14,10 @@ See [1] and its Supplementary Materials [2] for more details.
 
 The Matlab codes in this project are:
 
-wTrap.m         Matlab function, with inputs z and N, that evaluates w(z) using N+1 quadrature points in the case when z=x+iy with x,y >= 0. 
+wTrap.m         Matlab function, with inputs z and N, that evaluates w_N(z) using N+1 quadrature points in the case when z=x+iy with x,y >= 0. 
                 (N = 11 is recommended to achieve absolute and relative errors no larger than 1.4e-15) 
                 
-wTrapWCP.m      Matlab function, with inputs z and N, that evaluates w(z) using N+1 quadrature points for arbitrary complex z, by calling wTrap and using symmetries of w(z).
+wTrapWCP.m      Matlab function, with inputs z and N, that evaluates w_N(z) using N+1 quadrature points for arbitrary complex z, by calling wTrap and using symmetries of w(z).
                 (Again, N = 11 is recommended.)
                 
 test_wTrapWCP.m Matlab script file to run to test wTrapWCP (and wTrap which it calls).
