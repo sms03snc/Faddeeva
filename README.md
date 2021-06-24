@@ -6,7 +6,7 @@ w(z) := exp(-z^2) erfc(-i z),
 
 where erfc is the standard complementary error function and i = sqrt(-1). The methods used are based on representations for w(z) as an integral on the real line [1, (3)], and the evaluation of these integrals by modified trapezoidal rules. 
 
-The specific approximation w_N(z) implemented is the approximation obtained when the modified trapezoidal rule is used with N+1 quadrature points. This new method is attractive becuase it is provably exponentially convergent at a rapid rate, the accuracy improving by a factor exp(pi) = 23.1... for each extra quadrature point. (The results in [1, Figure 2] demonstrate that this is acheived in practice in double precision arithmetic.)
+The specific approximation w_N(z) implemented is the approximation obtained when the modified trapezoidal rule is used with N+1 quadrature points. This new method is attractive becuase it is provably exponentially convergent at a rapid rate, the accuracy improving by a factor exp(pi) = 23.1... for each extra quadrature point. (The results in [1, Figure 2] demonstrate that this convergence is achieved in practice in double precision arithmetic.)
 
 Precisely [1, Theorem 1.1] proves that |w(z)-w_N(z)| \leq 0.7 exp(-pi N) for all non-negative integers N and all complex z, and a similar bound holds on the relative error in the upper complex half-plane where w(z) is non-zero.
 
@@ -15,7 +15,7 @@ See [1] and its Supplementary Materials [2] for more details.
 The Matlab codes in this project are:
 
 wTrap.m         Matlab function, with inputs z and N, that evaluates w(z) using N+1 quadrature points in the case when z=x+iy with x,y >= 0. 
-                (N = 11 is recommended to achieve absolute and relative errors no larger than 2e-15.) 
+                (N = 11 is recommended to achieve absolute and relative errors no larger than 1.4e-15) 
                 
 wTrapWCP.m      Matlab function, with inputs z and N, that evaluates w(z) using N+1 quadrature points for arbitrary complex z, by calling wTrap and using symmetries of w(z).
                 (Again, N = 11 is recommended.)
