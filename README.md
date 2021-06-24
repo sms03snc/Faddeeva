@@ -4,7 +4,7 @@ This project contains Matlab code for evaluation of the Faddeeva function w(z), 
 
 w(z) := exp(-z^2) erfc(-i z),
 
-where erfc is the standard complementary error function and i = sqrt(-1). The methods used are based on representations for w(z) as an integral on the real line [1, (3)], and the evaluation of these integrals by modified trapezoidal rules. See [1] and its Supplementary Materials for more details.
+where erfc is the standard complementary error function and i = sqrt(-1). The methods used are based on representations for w(z) as an integral on the real line [1, (3)], and the evaluation of these integrals by modified trapezoidal rules. See [1] and its Supplementary Materials [2] for more details.
 
 The Matlab codes in this project are:
 
@@ -20,4 +20,5 @@ test_wTrapWCP.m Matlab script file to run to test wTrapWCP (and wTrap which it c
 Mohammad Al Azah (Al Hussein Technical University, Amman, Jordan) and
 Simon Chandler-Wilde (University of Reading, UK)
 
-[1] M. Al Azah and S. N. Chandler-Wilde, Computation of the complex error function using modified trapezoidal rules, 2020, arXiv:2010.05659
+[1] M. Al Azah and S. N. Chandler-Wilde, Computation of the complex error function using modified trapezoidal rules, 2021, arXiv:2010.05659 To appear in SIAM Journal on Numerical Analysis.
+[2] M. Al Azah and S. N. Chandler-Wilde, Supplementary Materials: Computation of the complex error function using modified trapezoidal rules, 2021, http://www.personal.rdg.ac.uk/~sms03snc/#respre . To appear (as supplementary materials to [1]) in SIAM Journal on Numerical Analysis.
