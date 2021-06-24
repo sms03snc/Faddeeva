@@ -22,7 +22,7 @@ wTrapWCP.m      Matlab function, with inputs z and N, that evaluates w_N(z) usin
                 
 test_wTrapWCP.m Matlab script file to run to test wTrapWCP (and wTrap which it calls).
 
-The remaining Matlab codes in this project are the files: wTrap_Q.m, a quadruple precision version of wTrap.m (which implements quadruple precision using the ADVANPIX Multiprecision Computing Toolbox for Matlab (https://www.advanpix.com/); test_time.m which times the execution of wTrap.m against other publicly available, published codes for evaluation w(z); test_accuracy_Q.m which tests the accuracy of wTrap.m and the accuracy of the same other publicly available Matlab codes against the quadruple precision version wTrap_Q.m.
+The remaining Matlab codes in this project are the files: wTrap_Q.m, a quadruple precision version of wTrap.m (which implements quadruple precision using the ADVANPIX Multiprecision Computing Toolbox for Matlab (https://www.advanpix.com/); test_time.m which times the execution of wTrap.m against other publicly available, published codes for evaluating w(z); test_accuracy_Q.m which tests the accuracy of wTrap.m and the accuracy of the same other publicly available Matlab codes against the quadruple precision version wTrap_Q.m.
 
 For more details of all these codes see [2].
 
