@@ -1,4 +1,4 @@
-# Faddeeva
+# Faddeeva [![View Faddeeva on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/94785-faddeeva)
 
 This project contains Matlab code for evaluation of the Faddeeva function w(z), for complex z, where
 
