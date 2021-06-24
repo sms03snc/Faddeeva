@@ -20,6 +20,6 @@ test_wTrapWCP.m Matlab script file to run to test wTrapWCP (and wTrap which it c
 Mohammad Al Azah (Al Hussein Technical University, Amman, Jordan) and
 Simon Chandler-Wilde (University of Reading, UK)
 
-[1] M. Al Azah and S. N. Chandler-Wilde, Computation of the complex error function using modified trapezoidal rules, 2021, arXiv:2010.05659 To appear in SIAM Journal on Numerical Analysis.
+[1] M. Al Azah and S. N. Chandler-Wilde, Computation of the complex error function using modified trapezoidal rules, 2021, https://arxiv.org/abs/2010.05659 . To appear in SIAM Journal on Numerical Analysis.
 
 [2] M. Al Azah and S. N. Chandler-Wilde, Supplementary Materials: Computation of the complex error function using modified trapezoidal rules, 2021, http://www.personal.rdg.ac.uk/~sms03snc/#respre . To appear (as supplementary materials to [1]) in SIAM Journal on Numerical Analysis.
