@@ -4,7 +4,7 @@ This project contains Matlab code for evaluation of the Faddeeva function w(z), 
 
 w(z) := exp(-z^2) erfc(-i z),
 
-where erfc is the standard complementary error function and i = sqrt(-1). The methods used are based on representations for w(z) as an integral on the real line [1, (3)], and the evaluation of these integrals by modified trapezoidal rules. 
+erfc is the standard complementary error function, and i = sqrt(-1). The methods used are based on representations for w(z) as an integral on the real line [1, (3)], and the evaluation of this integral by trapezoidal rules modified to take into account poles of the integrand near the real axis. 
 
 The specific approximation w_N(z) implemented is the approximation obtained when the modified trapezoidal rule is used with N+1 quadrature points. This new method is attractive because it is provably exponentially convergent at a rapid rate, the accuracy improving by a factor exp(pi) = 23.1... for each extra quadrature point. (The results in [1, Figure 2] demonstrate that this convergence is achieved in practice in double precision arithmetic.)
 
@@ -22,7 +22,7 @@ wTrapWCP.m      Matlab function, with inputs z and N, that evaluates w_N(z) usin
                 
 test_wTrapWCP.m Matlab script file to run to test wTrapWCP (and wTrap which it calls).
 
-The remaining Matlab codes in this project are the files: wTrap_Q.m, a quadruple precision version of wTrap.m (which implements quadruple precision using the ADVANPIX Multiprecision Computing Toolbox for Matlab (https://www.advanpix.com/); test_time.m which times the execution of wTrap.m against other publicly available, published codes for evaluating w(z); test_accuracy_Q.m which tests the accuracy of wTrap.m and the accuracy of the same other publicly available Matlab codes against the quadruple precision version wTrap_Q.m.
+The remaining Matlab codes in this project are the files: wTrap_Q.m, a quadruple precision version of wTrap.m (which implements quadruple precision using the ADVANPIX Multiprecision Computing Toolbox for Matlab (https://www.advanpix.com/); test_time.m which times the execution of wTrap.m against other published Matlab codes for evaluating w(z); test_accuracy_Q.m which tests the accuracy of wTrap.m and the accuracy of the same other publicly available Matlab codes against the quadruple precision version wTrap_Q.m.
 
 For more details of all these codes see [2].
 
