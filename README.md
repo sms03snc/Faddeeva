@@ -12,7 +12,7 @@ Precisely [1, Theorem 1.1] proves that |w(z)-w_N(z)| \leq 0.7 exp(-pi N) for all
 
 See [1] and its Supplementary Materials [2] for more details. In particular [1, Table 1] makes comparisons of accuracies and timings of this new method with those of previously published methods and their associated Matlab implementations. 
 
-The Matlab codes in this project are:
+The key Matlab codes in this project are:
 
 wTrap.m         Matlab function, with inputs z and N, that evaluates w_N(z) using N+1 quadrature points in the case when z=x+iy with x,y >= 0. 
                 (N = 11 is recommended to achieve absolute and relative errors no larger than 1.4e-15) 
@@ -20,9 +20,9 @@ wTrap.m         Matlab function, with inputs z and N, that evaluates w_N(z) usin
 wTrapWCP.m      Matlab function, with inputs z and N, that evaluates w_N(z) using N+1 quadrature points for arbitrary complex z, by calling wTrap and using symmetries of w(z).
                 (Again, N = 11 is recommended.)
                 
-test_wTrapWCP.m Matlab script file to run to test wTrapWCP (and wTrap which it calls). This should produce the output ErrorPS = 1.132209773400735e-15, indicating that the maximum difference between wTrapWCP(z,11) and w(z) computed using the power series of [3,(2.16)] with N = 12 is < 1.2e-15 in the square z = x+iy, -1/2 <= x < = 1/2, -1/2 <= y <= 1/2.
+test_wTrapWCP.m Matlab script file to run to test that wTrapWCP (and wTrap which it calls) are working. This should produce the output ErrorPS = 1.132209773400735e-15, indicating that the maximum difference between wTrapWCP(z,11) and w(z) computed using the power series of [3,(2.16)] with N = 12 is < 1.2e-15 in the square z = x+iy, -1/2 <= x < = 1/2, -1/2 <= y <= 1/2.
 
-The remaining Matlab codes in this project are the files: wTrap_Q.m, a quadruple precision version of wTrap.m (which implements quadruple precision using the ADVANPIX Multiprecision Computing Toolbox for Matlab (https://www.advanpix.com/); test_time.m which times the execution of wTrap.m against other published Matlab codes for evaluating w(z); test_accuracy_Q.m which tests the accuracy of wTrap.m and the accuracy of the same other publicly available Matlab codes against the quadruple precision version wTrap_Q.m.
+The remaining Matlab codes in this project are the files: wTrap_Q.m, a quadruple precision version of wTrap.m (which implements quadruple precision using the ADVANPIX Multiprecision Computing Toolbox for Matlab (https://www.advanpix.com/)); test_time.m which times the execution of wTrap.m against other published Matlab codes for evaluating w(z); test_accuracy_Q.m which tests the accuracy of wTrap.m and the accuracy of the same other publicly available Matlab codes against the quadruple precision version wTrap_Q.m.
 
 For more details of all these codes see [2].
 
